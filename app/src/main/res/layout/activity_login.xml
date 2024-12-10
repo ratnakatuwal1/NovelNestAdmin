@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textAdminLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/orbitron"
+        android:textSize="@dimen/_24ssp"
+        android:textColor="@color/headingText"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:letterSpacing=".1"
+        app:layout_constraintEnd_toEndOf="@+id/imageLogo"
+        app:layout_constraintStart_toStartOf="@+id/imageLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+    <TextView
+        android:id="@+id/textAdminLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please signin to continue"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:fontFamily="@font/zenantique"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/subHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/textAdminLogin"
+        app:layout_constraintStart_toStartOf="@+id/textAdminLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textAdminLogin" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:ems="10"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/zenantique"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/custom_edit_text"
+        android:hint="Email"
+        android:textColorHint="@color/paragraphHeadingText"
+        android:textColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/textAdminLoginTitle"
+        app:layout_constraintStart_toStartOf="@+id/textAdminLoginTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textAdminLoginTitle" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:ems="10"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:drawableEnd="@drawable/eye_show_svgrepo_com"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/zenantique"
+        android:textSize="@dimen/_16sdp"
+        android:background="@drawable/custom_edit_text"
+        android:hint="Password"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <TextView
+        android:id="@+id/textViewForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:fontFamily="@font/zenantique"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/paragraphHeadingText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/custom_button"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18ssp"
+        android:fontFamily="@font/zenantique"
+        android:textAllCaps="false"
+        android:letterSpacing=".1"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewForgetPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
