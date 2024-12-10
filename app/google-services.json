@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "839033051844",
+    "project_id": "novelnestapp-ratnakatuwal",
+    "storage_bucket": "novelnestapp-ratnakatuwal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839033051844:android:cc70ef4cd91f05bc7ec791",
+        "android_client_info": {
+          "package_name": "com.example.novelnestadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0FAzCPgZelH36DWiIbeIgiM9Ny3WWVws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839033051844:android:fd03cf0ec631ef4c7ec791",
+        "android_client_info": {
+          "package_name": "com.ratna.novelnestapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0FAzCPgZelH36DWiIbeIgiM9Ny3WWVws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
