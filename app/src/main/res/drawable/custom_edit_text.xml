@@ -2,10 +2,9 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#FFFFFF" /> <!-- Background color -->
-            <corners android:radius="12dp" /> <!-- Rounded corners -->
-            <stroke android:width="2dp" android:color="#FF9800" /> <!-- Border color -->
-            <padding android:left="10dp" android:right="10dp" android:top="8dp" android:bottom="8dp" /> <!-- Padding inside the EditText -->
+            <solid android:color="#00000000" /> <!-- Transparent background -->
+            <corners android:radius="10dp" /> <!-- Match the inner radius -->
+            <stroke android:width="0dp" android:color="@android:color/transparent" /> <!-- No inner border -->
         </shape>
     </item>
 </selector>

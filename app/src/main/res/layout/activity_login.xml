@@ -48,64 +48,79 @@
         app:layout_constraintStart_toStartOf="@+id/textAdminLogin"
         app:layout_constraintTop_toBottomOf="@+id/textAdminLogin" />
 
-    <EditText
-        android:id="@+id/editTextEmail"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_input_layout"
         android:layout_width="@dimen/_280sdp"
-        android:layout_height="@dimen/_45sdp"
-        android:ems="10"
-        android:drawableStart="@drawable/mail"
-        android:drawablePadding="@dimen/_5sdp"
-        android:padding="@dimen/_5sdp"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:fontFamily="@font/zenantique"
-        android:textSize="@dimen/_16sdp"
-        android:background="@drawable/custom_edit_text"
-        android:hint="Email"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:boxStrokeColor="@color/novelPrimary"
+        app:boxStrokeWidth="@dimen/_2sdp"
         android:textColorHint="@color/paragraphHeadingText"
-        android:textColor="@color/paragraphHeadingText"
         app:layout_constraintEnd_toEndOf="@+id/textAdminLoginTitle"
         app:layout_constraintStart_toStartOf="@+id/textAdminLoginTitle"
-        app:layout_constraintTop_toBottomOf="@+id/textAdminLoginTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textAdminLoginTitle"
+        app:hintTextColor="@color/paragraphHeadingText">
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/zenantique"
+            android:hint="Email"
+            android:textColor="@color/novelPrimaryText"
+            android:contentDescription="Enter your email address"
+            android:importantForAccessibility="yes" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_layout"
         android:layout_width="@dimen/_280sdp"
-        android:layout_height="@dimen/_45sdp"
-        android:ems="10"
-        android:drawableStart="@drawable/lock"
-        android:drawablePadding="@dimen/_5sdp"
-        android:padding="@dimen/_5sdp"
-        android:drawableEnd="@drawable/eye_show_svgrepo_com"
-        android:inputType="textPassword"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:fontFamily="@font/zenantique"
-        android:textSize="@dimen/_16sdp"
-        android:background="@drawable/custom_edit_text"
-        android:hint="Password"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:boxStrokeColor="@color/novelPrimary"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:endIconMode="password_toggle"
         android:textColorHint="@color/paragraphHeadingText"
-        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        app:layout_constraintEnd_toEndOf="@+id/email_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/email_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/email_input_layout"
+        app:hintTextColor="@color/paragraphHeadingText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/zenantique"
+            android:hint="Password"
+            android:textColor="@color/novelPrimaryText"
+            android:contentDescription="Enter your email address"
+            android:importantForAccessibility="yes" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textViewForgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forget Password?"
-        android:layout_marginTop="@dimen/_6sdp"
-        android:layout_marginEnd="@dimen/_14sdp"
         android:fontFamily="@font/zenantique"
-        android:textSize="@dimen/_16ssp"
+        android:text="Forget Password?"
         android:textColor="@color/paragraphHeadingText"
+        android:textSize="@dimen/_16ssp"
         android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/password_input_layout" />
 
-    <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLogin"
-        android:layout_width="@dimen/_280sdp"
-        android:layout_height="@dimen/_45sdp"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_40sdp"
         android:background="@drawable/custom_button"
         android:textStyle="bold"
         android:textSize="@dimen/_18ssp"

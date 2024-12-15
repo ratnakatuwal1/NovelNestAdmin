@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddNovelActivity" >
+
+    <TextView
+        android:id="@+id/textViewAddNovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Novel"
+        android:fontFamily="@font/orbitron"
+        android:textColor="@color/headingText"
+        android:textSize="@dimen/_24ssp"
+        android:letterSpacing=".1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAddNovel"
+        app:layout_constraintStart_toStartOf="@+id/textViewAddNovel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddNovel"
+        app:hintTextColor="@color/paragraphHeadingText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

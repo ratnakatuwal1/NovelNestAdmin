@@ -3,11 +3,9 @@
     <!-- Rounded corners for the shape -->
     <corners android:radius="@dimen/_15sdp" />
 
-    <!-- Solid background color -->
     <solid android:color="@color/background" />
 
-    <!-- Border stroke around the shape -->
     <stroke
-        android:color="@color/secondary"
+        android:color="@color/novelPrimary"
         android:width="@dimen/_1sdp" />
 </shape>

@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true">
-        <shape android:shape="rectangle">
-            <solid android:color="#FF5722" /> <!-- Color when button is pressed -->
-            <corners android:radius="16dp" /> <!-- Rounded corners -->
-            <stroke android:width="2dp" android:color="#D84315" /> <!-- Border color -->
-        </shape>
-    </item>
-    <item android:state_enabled="false">
-        <shape android:shape="rectangle">
-            <solid android:color="#BDBDBD" /> <!-- Color when button is disabled -->
-            <corners android:radius="16dp" />
-            <stroke android:width="2dp" android:color="#9E9E9E" />
-        </shape>
-    </item>
-    <item>
-        <shape android:shape="rectangle">
-            <gradient
-                android:angle="45"
-                android:startColor="#FFC107"
-                android:endColor="#FF9800" /> <!-- Gradient color when button is in normal state -->
-            <corners android:radius="16dp" />
-            <stroke android:width="2dp" android:color="#F57C00" />
-        </shape>
-    </item>
-</selector>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#0096FF" />
+    <corners android:radius="@dimen/_40sdp" />
+    <gradient
+        android:startColor="#5D3FD3"
+        android:endColor="#4169E1"
+        android:angle="45" />
+    <stroke
+        android:color="@color/white"
+        android:width="2dp" />
+</shape>

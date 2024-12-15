@@ -9,10 +9,12 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class LoginActivity extends AppCompatActivity {
-    private EditText editTextEmail, editTextPassword;
-    private Button buttonLogin;
-    private TextView textViewForgetPassword;
+   private TextInputEditText email_input, password_input;
+   private TextView textViewForgetPassword;
+   private Button buttonLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +22,16 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
-        editTextEmail = findViewById(R.id.editTextEmail);
-        editTextPassword = findViewById(R.id.editTextTextPassword);
-        buttonLogin = findViewById(R.id.buttonLogin);
+        email_input = findViewById(R.id.email_input);
+        password_input = findViewById(R.id.password_input);
         textViewForgetPassword = findViewById(R.id.textViewForgetPassword);
+        buttonLogin = findViewById(R.id.buttonLogin);
 
         buttonLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this, AdminDashboard.class);
             startActivity(intent);
             finish();
         });
+
     }
 }

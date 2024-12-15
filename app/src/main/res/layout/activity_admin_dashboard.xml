@@ -94,6 +94,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/subHeadingText"
                 android:textSize="@dimen/_16ssp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline2"
                 app:layout_constraintTop_toBottomOf="@+id/imagePending" />
 
@@ -113,7 +114,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewAddItem"
+        android:id="@+id/cardViewAddNovel"
         android:layout_width="@dimen/_130sdp"
         android:layout_height="@dimen/_100sdp"
         android:layout_marginStart="@dimen/_10sdp"
@@ -200,9 +201,9 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         app:cardCornerRadius="@dimen/_15sdp"
-        app:layout_constraintEnd_toEndOf="@+id/cardViewAddItem"
-        app:layout_constraintStart_toStartOf="@+id/cardViewAddItem"
-        app:layout_constraintTop_toBottomOf="@+id/cardViewAddItem">
+        app:layout_constraintEnd_toEndOf="@+id/cardViewAddNovel"
+        app:layout_constraintStart_toStartOf="@+id/cardViewAddNovel"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewAddNovel">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
