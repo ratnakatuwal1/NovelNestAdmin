@@ -13,6 +13,18 @@
         android:theme="@style/Theme.NovelNestAdmin"
         tools:targetApi="31">
         <activity
+            android:name=".UserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".UserList"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
             android:name=".AdminProfile"
             android:exported="false" />
         <activity
