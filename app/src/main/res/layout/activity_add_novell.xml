@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNovel">
+
+    <TextView
+        android:id="@+id/textViewAddNovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/orbitron"
+        android:letterSpacing=".1"
+        android:text="Add Novel"
+        android:textColor="@color/headingText"
+        android:textSize="@dimen/_28ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelTitle_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAddNovel"
+        app:layout_constraintStart_toStartOf="@+id/textViewAddNovel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddNovel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelTitle_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zenantique"
+            android:hint="Novel Title"
+            android:inputType="text"
+            android:textColor="@color/novelPrimaryText"
+            android:textSize="@dimen/_14ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelAuthor_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/novelTitle_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/novelTitle_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelTitle_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelAuthor_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zenantique"
+            android:hint="Author"
+            android:inputType="text"
+            android:textColor="@color/novelPrimaryText"
+            android:textSize="@dimen/_14ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelLanguage_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/novelAuthor_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/novelAuthor_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelAuthor_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelLanguage_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zenantique"
+            android:hint="Language"
+            android:inputType="text"
+            android:textColor="@color/novelPrimaryText"
+            android:textSize="@dimen/_14ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelPublishDate_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/novelLanguage_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/novelLanguage_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelLanguage_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelPublishDate_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zenantique"
+            android:hint="Publish Date"
+            android:inputType="text"
+            android:textColor="@color/novelPrimaryText"
+            android:textSize="@dimen/_14ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelIsbnNumber_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/novelPublishDate_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/novelPublishDate_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelPublishDate_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelIsbn_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zenantique"
+            android:hint="ISBN"
+            android:inputType="number"
+            android:textColor="@color/novelPrimaryText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelGenre_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/novelIsbnNumber_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/novelIsbnNumber_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelIsbnNumber_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelGenre_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zenantique"
+            android:hint="Genre"
+            android:inputType="text"
+            android:textColor="@color/novelPrimaryText"
+            android:textSize="@dimen/_14ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelPublisher_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/novelGenre_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/novelGenre_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelGenre_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelPublisher_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zenantique"
+            android:hint="Publisher"
+            android:inputType="text"
+            android:textColor="@color/novelPrimaryText"
+            android:textSize="@dimen/_14ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/novelDescription_input_layout"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColorHint="@color/paragraphHeadingText"
+        app:boxStrokeColor="@color/novelPrimaryText"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:hintTextColor="@color/paragraphHeadingText"
+        app:layout_constraintEnd_toEndOf="@+id/novelPublisher_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/novelPublisher_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelPublisher_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/novelDescription_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:fontFamily="@font/zenantique"
+            android:gravity="top|start"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:textColor="@color/novelPrimaryText"
+            android:textSize="@dimen/_14ssp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/zenantique"
+        android:text="Add Novel Image"
+        android:textColor="@color/paragraphHeadingText"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/novelDescription_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/novelDescription_input_layout" />
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/imageViewShow"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/a" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAddNovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Novel"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewShow"
+        app:layout_constraintStart_toStartOf="@+id/imageViewShow"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewShow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

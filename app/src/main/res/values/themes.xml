@@ -3,6 +3,10 @@
     <style name="Base.Theme.NovelNestAdmin" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/background</item>
+
+        <!-- Set to true if you want dark icons for a light status bar, false otherwise -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.NovelNestAdmin" parent="Base.Theme.NovelNestAdmin" />

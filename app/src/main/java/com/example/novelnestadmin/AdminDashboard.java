@@ -22,7 +22,7 @@ public class AdminDashboard extends AppCompatActivity {
         cardViewAddNovel = findViewById(R.id.cardViewAddNovel);
 
         cardViewAddNovel.setOnClickListener(v -> {
-            Intent intent = new Intent(AdminDashboard.this, AddNovelActivity.class);
+            Intent intent = new Intent(AdminDashboard.this, AddNovel.class);
             startActivity(intent);
         });
     }
